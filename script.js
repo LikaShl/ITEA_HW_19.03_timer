@@ -67,3 +67,54 @@ forwardButton.addEventListener("click", startForward);
 
 let reverseButton = document.getElementById("reverse");
 reverseButton.addEventListener("click", startReverse);
+
+let today = new Date();
+console.log(today);
+let month = today.getMonth();
+console.log(month);
+let monthsNames = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+console.log(month);
+let todayMonth = monthsNames[month];
+console.log(todayMonth);
+let season;
+let timesOfYear = ["Winter", "Spring", "Sommer", "Autumn"];
+if ((month = /[2 - 4]/)) {
+  season = timesOfYear[1];
+} else if ((month = /[5 - 7]/)) {
+  season = timesOfYear[2];
+} else if ((month = /[8 - 10]/)) {
+  season = timesOfYear[3];
+} else {
+  season = timesOfYear[0];
+}
+
+let todayYear = today.getFullYear();
+console.log(todayYear);
+
+let day = today.getDay();
+if ((day = /[0-4]/)) {
+  todayDay = "Workday";
+} else {
+  todayDay = "Weekend";
+}
+
+document.getElementById("season").innerHTML = season;
+
+document.getElementById("today-month").innerHTML = todayMonth;
+
+document.getElementById("today-year").innerHTML = todayYear;
+
+document.getElementById("weekday").innerHTML = todayDay;

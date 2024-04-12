@@ -36,6 +36,11 @@
         margin-top: 30px;
         margin-bottom: 30px;
       }
+      .kalender {
+        color: gold;
+        font-size: 64px;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -53,6 +58,10 @@
       <button id="forward">from 0 to 30</button>
       <button id="reverse">from 30 to 0</button>
     </div>
+    <p class="kalender">Today is <span id="season"></span></p>
+    <p class="kalender">
+      <span id="today-month"> </span> <span id="today-year"> </span> <span id="weekday"></span>
+    </p>
     <script src="script.js"></script>
   </body>
 </html>
