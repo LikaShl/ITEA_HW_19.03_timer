@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+      .tittle {
+        color: lime;
+        font-size: 64px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .btn-block {
+        display: flex;
+        justify-content: center;
+      }
+      button {
+        margin: 20px;
+        padding: 20px 30px;
+        background-color: lime;
+        font-size: 24px;
+        font-weight: 600;
+      }
+      .timer {
+        font-size: 152px;
+        color: lime;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="tittle">timer</h1>
+      <div class="btn-block">
+        <button id="on">Timer ON</button>
+        <button id="pause">Pause</button>
+        <button id="off">Timer OFF</button>
+      </div>
+
+      <h2 class="timer" id="timer">0</h2>
+    </div>
+    <div class="btn-block">
+      <button id="forward">from 0 to 30</button>
+      <button id="reverse">from 30 to 0</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
