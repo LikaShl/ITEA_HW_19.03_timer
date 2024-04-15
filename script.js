@@ -69,6 +69,7 @@ let reverseButton = document.getElementById("reverse");
 reverseButton.addEventListener("click", startReverse);
 
 let today = new Date();
+
 console.log(today);
 let month = today.getMonth();
 console.log(month);
@@ -93,6 +94,7 @@ let season;
 let timesOfYear = ["Winter", "Spring", "Sommer", "Autumn"];
 if ((month = /[2 - 4]/)) {
   season = timesOfYear[1];
+  console.log(month);
 } else if ((month = /[5 - 7]/)) {
   season = timesOfYear[2];
 } else if ((month = /[8 - 10]/)) {
@@ -100,7 +102,7 @@ if ((month = /[2 - 4]/)) {
 } else {
   season = timesOfYear[0];
 }
-
+console.log(month);
 let todayYear = today.getFullYear();
 console.log(todayYear);
 
@@ -110,7 +112,6 @@ if ((day = /[0-4]/)) {
 } else {
   todayDay = "Weekend";
 }
-
 document.getElementById("season").innerHTML = season;
 
 document.getElementById("today-month").innerHTML = todayMonth;

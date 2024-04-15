@@ -4,44 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timer</title>
-    <style>
-      body {
-        background-color: black;
-      }
-      .container {
-        width: 80%;
-        margin: 0 auto;
-      }
-      .tittle {
-        color: lime;
-        font-size: 64px;
-        text-transform: uppercase;
-        text-align: center;
-      }
-      .btn-block {
-        display: flex;
-        justify-content: center;
-      }
-      button {
-        margin: 20px;
-        padding: 20px 30px;
-        background-color: lime;
-        font-size: 24px;
-        font-weight: 600;
-      }
-      .timer {
-        font-size: 152px;
-        color: lime;
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
-      }
-      .kalender {
-        color: gold;
-        font-size: 64px;
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
@@ -51,7 +14,6 @@
         <button id="pause">Pause</button>
         <button id="off">Timer OFF</button>
       </div>
-
       <h2 class="timer" id="timer">0</h2>
     </div>
     <div class="btn-block">
@@ -60,7 +22,8 @@
     </div>
     <p class="kalender">Today is <span id="season"></span></p>
     <p class="kalender">
-      <span id="today-month"> </span> <span id="today-year"> </span> <span id="weekday"></span>
+      <span id="today-month"> </span> <span id="today-year"> </span>
+      <span id="weekday"></span>
     </p>
     <script src="script.js"></script>
   </body>

@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .tittle {
+    color: lime;
+    font-size: 64px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .btn-block {
+    display: flex;
+    justify-content: center;
+  }
+  button {
+    margin: 20px;
+    padding: 20px 30px;
+    background-color: lime;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .timer {
+    font-size: 152px;
+    color: lime;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .kalender {
+    color: gold;
+    font-size: 64px;
+    text-align: center;
+  }
